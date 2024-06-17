@@ -1,0 +1,41 @@
+live_config_reload = true
+
+[shell]
+program = "/opt/homebrew/bin/fish"
+args = ["-l", "-c", "zellij"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "buttonless"
+option_as_alt = "Both"
+startup_mode = "Fullscreen"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 18
+offset = { x = 0, y = 1 }
+glyph_offset = { x = 0, y = 0 }
+
+[colors]
+primary = { background = "#15141b", foreground = "#edecee" }
+normal = { white = "#edecee", black = "#110f18", red = "#ff6767", green = "#61ffca", yellow = "#ffca85", blue = "#a277ff", cyan = "#61ffca" }
+bright = { black = "#4d4d4d", red = "#ff6767", green = "#61ffca", yellow = "#ffca85", blue = "#a277ff", magenta = "#a277ff", cyan = "#61ffca", white = "#edecee" }
+search = { matches = { foreground = "#000000", background = "#ffffff" }, focused_match = { foreground = "#ffffff", background = "#9F7AF5" } }
+cursor = { cursor = "#a277ff" }
+selection = { text = "CellForeground", background = "#29263c" }
+
+[scrolling]
+history = 100000
+multiplier = 4
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{<>"
+save_to_clipboard = true
